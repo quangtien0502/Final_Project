@@ -12,4 +12,7 @@ public interface ICategoryService {
     void deleteById(Long id);
 
     Category save(Category category);
+
+    List<Category> getAllEnable();
+    Boolean checkDuplicateName(String name);
 }

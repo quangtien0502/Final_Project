@@ -32,4 +32,14 @@ public class CategoryService implements ICategoryService {
     public Category save(Category category) {
         return categoryRepository.save(category);
     }
+
+    @Override
+    public List<Category> getAllEnable() {
+        return categoryRepository.getAllByStatus(true);
+    }
+
+    @Override
+    public Boolean checkDuplicateName(String name) {
+        return null;
+    }
 }

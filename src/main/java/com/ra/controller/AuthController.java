@@ -33,6 +33,6 @@ public class AuthController {
     @PostMapping("/register")
     public String register(@ModelAttribute("user") User user) {
         userService.handleRegister(user);
-        return "redirect:/login";
+        return "redirect:/permitAll/login";
     }
 }

@@ -1,7 +1,9 @@
 package com.ra.service.Imp;
 
+import com.ra.model.entity.Orders;
 import com.ra.model.entity.Role;
 import com.ra.model.entity.User;
+import com.ra.model.enums.OrderStatus;
 import com.ra.repository.UserRepository;
 import com.ra.service.IRoleService;
 import com.ra.service.IUserService;
@@ -74,6 +76,31 @@ public class UserService implements IUserService {
 
     @Override
     public List<User> SearchByFullName(String keyword) {
+        return null;
+    }
+
+    @Override
+    public String updatePassword(String oldPassword, String newPassword) {
+        return null;
+    }
+
+    @Override
+    public List<User> findUserByFullName(String keyword) {
+        return null;
+    }
+
+    @Override
+    public User findByUserName(String userName) {
+        return null;
+    }
+
+    @Override
+    public List<Orders> orderedHistory(OrderStatus orderStatus) {
+        return null;
+    }
+
+    @Override
+    public String changeUserStatus(Long userId) {
         return null;
     }
 }

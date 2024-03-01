@@ -5,7 +5,7 @@
     Copyright 2024
  ============================================================-->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" xmlns:sec="http://www.w3.org/1999/xhtml">
 
 
 <!-- Mirrored from maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Feb 2024 00:49:06 GMT -->
@@ -73,7 +73,7 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle cr-right-bar-item" href="javascript:void(0)">
                                         <i class="ri-user-3-line"></i>
-                                        <span>Account</span>
+                                        <span sec:authentication="principal.user.username"></span>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>

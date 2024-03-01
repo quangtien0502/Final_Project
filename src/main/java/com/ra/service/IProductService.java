@@ -13,4 +13,10 @@ public interface IProductService {
     void deleteById(Long id);
 
     Product save(Product product);
+
+    List<Product> getAllEnable();
+
+    List<Product> findByNameOrDescription(String keyword);
+
+    List<Product> bestSeller();
 }

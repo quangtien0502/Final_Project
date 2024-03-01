@@ -32,4 +32,19 @@ public class ProductService implements IProductService {
     public Product save(Product product) {
         return productRepository.save(product);
     }
+
+    @Override
+    public List<Product> getAllEnable() {
+        return productRepository.findAllByStatus(true);
+    }
+
+    @Override
+    public List<Product> findByNameOrDescription(String keyword) {
+        return null;
+    }
+
+    @Override
+    public List<Product> bestSeller() {
+        return null;
+    }
 }

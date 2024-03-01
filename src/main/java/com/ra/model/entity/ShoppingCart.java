@@ -12,7 +12,7 @@ import lombok.*;
 public class ShoppingCart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     //Todo: Foreign Key Shopping Cart Detail
     //Todo: Foreign Key User Id(done)
     @ManyToOne
