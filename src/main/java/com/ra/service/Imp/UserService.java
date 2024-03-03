@@ -56,7 +56,7 @@ public class UserService implements IUserService {
 
     @Override
     public User findById(Long id) {
-        return null;
+        return userRepository.findById(id).orElseThrow(()->new RuntimeException("No User found for this user"));
     }
 
     @Override
